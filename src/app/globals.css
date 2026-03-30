@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Font families (required by spec) */
+.font-heading {
+  font-family: "Khand", sans-serif;
+}
+
+.font-body {
+  font-family: "Switzer", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Switzer", sans-serif;
+}
+

@@ -1,0 +1,36 @@
+---
+const navItems = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/projects", label: "Projects" },
+];
+
+const pathname = Astro.url.pathname;
+---
+
+<header class="border-b border-black/10 bg-white">
+  <div class="mx-auto flex max-w-[960px] flex-wrap items-center justify-between gap-3 px-6 py-4">
+    <a
+      href="/"
+      class="font-heading text-lg font-bold uppercase tracking-wide text-black"
+    >
+      Dr. Bhargava R
+    </a>
+
+    <nav aria-label="Primary" class="flex flex-wrap gap-x-5 gap-y-2">
+      {navItems.map((item) => {
+        const isActive = item.href === "/" ? pathname === "/" : pathname === item.href;
+        const linkClass = isActive
+          ? "text-accent underline underline-offset-4"
+          : "text-black/90 hover:text-accent";
+
+        return (
+          <a href={item.href} class={`font-body text-sm font-semibold ${linkClass}`}>
+            {item.label}
+          </a>
+        );
+      })}
+    </nav>
+  </div>
+</header>
+

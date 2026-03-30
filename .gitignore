@@ -1,0 +1,14 @@
+# dependencies
+node_modules/
+
+# Next.js / build artifacts
+.next/
+.next/
+
+# Astro output
+dist/
+
+# env / misc
+.env
+.env.*
+.DS_Store

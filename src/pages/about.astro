@@ -1,0 +1,92 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import NewsletterForm from "../components/NewsletterForm.astro";
+
+const pageTitle = "About | Dr. Bhargava R";
+const pageDescription =
+  "Learn about Dr. Bhargava R's professional background, experience, roles, and achievements. Subscribe to the weekly newsletter.";
+---
+
+<SiteLayout title={pageTitle} description={pageDescription}>
+  <section class="mx-auto max-w-[960px] px-6 pb-14 pt-14 md:pb-16">
+    <div class="max-w-[70ch]">
+      <h1 class="font-heading text-5xl font-bold uppercase leading-tight text-black sm:text-6xl">
+        About Dr. Bhargava R
+      </h1>
+
+      <p class="mt-6 font-body text-base leading-relaxed text-black/75 sm:text-lg">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placeholder content
+        for Dr. Bhargava R's story, teaching philosophy, and technology education goals.
+      </p>
+    </div>
+
+    <div class="mt-12 grid gap-8 md:grid-cols-2">
+      <section class="rounded-2xl border border-black/10 bg-white p-6 md:p-8">
+        <h2 class="font-heading text-2xl font-bold uppercase tracking-wide text-black">
+          Professional Background
+        </h2>
+        <p class="mt-4 font-body text-sm leading-relaxed text-black/70 sm:text-base">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis neque
+          in malesuada cursus. Lorem ipsum placeholder for background details.
+        </p>
+
+        <ul class="mt-5 space-y-3 font-body text-sm text-black/80">
+          <li class="flex gap-3">
+            <span class="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-accent" aria-hidden="true" />
+            Teaching & curriculum design (placeholder)
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-accent" aria-hidden="true" />
+            Hands-on lab & mentorship (placeholder)
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-accent" aria-hidden="true" />
+            Technology education at scale (placeholder)
+          </li>
+        </ul>
+      </section>
+
+      <section class="rounded-2xl border border-black/10 bg-white p-6 md:p-8">
+        <h2 class="font-heading text-2xl font-bold uppercase tracking-wide text-black">
+          Experience, Roles & Achievements
+        </h2>
+        <p class="mt-4 font-body text-sm leading-relaxed text-black/70 sm:text-base">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod placeholder
+          for experience and impact.
+        </p>
+
+        <div class="mt-6 space-y-4">
+          <div class="rounded-xl border border-black/10 bg-white p-4">
+            <p class="font-heading text-sm font-bold uppercase tracking-wide text-accent">
+              Professor
+            </p>
+            <p class="mt-2 font-body text-sm text-black/70">
+              Lorem ipsum placeholder for professorial achievements.
+            </p>
+          </div>
+          <div class="rounded-xl border border-black/10 bg-white p-4">
+            <p class="font-heading text-sm font-bold uppercase tracking-wide text-accent">
+              Training Manager
+            </p>
+            <p class="mt-2 font-body text-sm text-black/70">
+              Lorem ipsum placeholder for training outcomes.
+            </p>
+          </div>
+          <div class="rounded-xl border border-black/10 bg-white p-4">
+            <p class="font-heading text-sm font-bold uppercase tracking-wide text-accent">
+              Technology Educator
+            </p>
+            <p class="mt-2 font-body text-sm text-black/70">
+              Lorem ipsum placeholder for educator impact.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="mt-12">
+      <NewsletterForm />
+    </section>
+  </section>
+</SiteLayout>
+
